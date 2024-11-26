@@ -1,0 +1,47 @@
+.suite .titre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.suite h1{
+    text-align: center;
+}
+
+.row{
+    border-top: thin solid black;
+    width: 10px;
+    height: 1px;
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
+    top:40px;
+}
+
+.title-elem{
+    flex-grow: 1;
+}
+
+.suite p{
+    text-align: center;
+    color: dimgray;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(3,33%);
+    grid-gap:10% 10px;
+}
+
+.image img{
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+.image h2{
+    position: relative;
+    bottom: 90px;
+    left:20px;
+    color: white;
+}

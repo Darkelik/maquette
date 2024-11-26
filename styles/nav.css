@@ -1,0 +1,54 @@
+#navigation h1{
+    text-align: center;
+    background-color: gold;
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+    position: relative;
+    bottom: 20px;
+    margin:none;
+    align-items: center;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    position: relative;
+    width: 25%;
+}
+
+nav a:before{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    background-color: #333;
+    height: 5px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    left: 0;
+    transition: .3s;
+}
+
+nav a:hover:before {
+    bottom: 0;
+}
+
+nav a:not(.isActive):hover {
+    color: gray;
+}
+
+.isActive{
+    font-size: 20px;
+    color: red;
+}
+
+nav button{
+    background-color:crimson;
+    color:white
+}
